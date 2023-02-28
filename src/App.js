@@ -1,20 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/Footer';
-import GridProduct from './components/GridProduct';
+import Layout from './page/Layout';
+import { BrowserRouter} from 'react-router-dom';
 function App() {
   return (
-    <div>
-      <Header/>
-      <h3 className='titre'> Bienvenue dans votre boutique favorite</h3>
-      <div className='body'>
-        <GridProduct/>
-      </div>
-      <Footer/>
-    </div>
-    
+    <BrowserRouter>
+      <Layout/>
+    </BrowserRouter>  
   );
 }
 
