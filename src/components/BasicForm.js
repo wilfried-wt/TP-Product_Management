@@ -1,5 +1,6 @@
-import React from 'react'
-import { Form, Button } from 'react-bootstrap'
+import React from 'react';
+import { Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export default function BasicForm() {
   return (
     <div className='main'>
@@ -23,7 +24,12 @@ export default function BasicForm() {
             </Form.Group>
             <Button variant="primary" type="submit">
             Submit
-            </Button>
+            </Button> 
+            <br/>
+            <br/>
+            <Form.Text className="text-muted">
+                Clicker <Link to="/register">ici</Link> Pour vous inscrire
+            </Form.Text>
         </Form>
     </div>
     

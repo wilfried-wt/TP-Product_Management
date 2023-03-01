@@ -13,7 +13,6 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end flex-grow-1 pe-2">
           <Button className='button' variant="info" onClick={()=> navigate("/login")}>login</Button>
-          <Button variant="info" onClick={()=> navigate("/register")}>registration</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
