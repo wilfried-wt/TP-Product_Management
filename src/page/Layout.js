@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const Layout = () => {
   return (
     <>
-    {/* nav bar section */ }
+    {/* header */ }
     <div>
       <Header/>
     </div>
@@ -14,6 +14,7 @@ const Layout = () => {
     <div>
       <NavPage/>
     </div>
+    {/* footer */ }
     <div>
       <Footer/>
     </div>

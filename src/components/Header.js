@@ -12,7 +12,9 @@ export default function Header() {
         <Navbar.Brand className='logo' onClick={()=> navigate("/")}>React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end flex-grow-1 pe-2">
-          <Button className='button' variant="info" onClick={()=> navigate("/login")}>login</Button>
+          <Button className='button' variant="secondary" onClick={()=> navigate("/add")}>Manager les produits</Button>
+          <Button className='button' variant="secondary" onClick={()=> navigate("/login")}>Log in</Button>
+          <Button className='button' variant="info" onClick={()=> navigate("/register")}>Sign up</Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
