@@ -82,7 +82,7 @@ function ManageProduit() {
             </Button>
             </Modal.Footer>
         </Modal>
-        <div style={{ marginLeft: '40%' }}>
+        <div style={{ marginLeft: '40%', marginBottom: '20px' }}>
             <h1> Table of Articles</h1>
             <table>
                 {renderHeader()}

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispatch } from 'react-redux';
-import { updateUser } from '../store';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateLoading } from '../store';
 
 export default function BasicForm() {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ export default function BasicForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-
+ 
   const handleSubmit = e => {
     e.preventDefault();
     const user = users.find(item => {
@@ -19,7 +19,9 @@ export default function BasicForm() {
         return item;
       }
     });
-    dispatch(updateUser(user.id));
+    const loading = true;
+    dispatch(updateLoading(loading));
+
     if (user) {
       navigate("/add");
     } else {

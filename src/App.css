@@ -14,8 +14,7 @@
     background-color: #7c8184;
     color: black;
     text-align: center;
-    height: 100px;
-    padding-top: 30px;
+    bottom: 0px;
 }
 .main {
     display: flex;
