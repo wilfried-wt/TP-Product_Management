@@ -19,7 +19,6 @@ function Acceuil() {
       <div className='body'>
         <GridProduct/>
       </div>
-      <Footer/>
     </div>
   )
 }
